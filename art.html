@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<title>Barbie's Portfolio</title>
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Tiny5&display=swap');
+
+    *{
+        box-sizing: border-box;
+    }
+
+
+    body{
+    
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background-image: url('./images/sunset.png');
+        font-family: 'Tiny5';
+        color:black;
+        text-align: center;
+        place-content: center;
+    
+
+       
+
+    }
+
+
+    #logo{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        background-color: lightpink;
+        padding: 0px;
+        font-size: 60px;
+        font-family: 'Jacquard 12 Charted';
+        color: aliceblue;
+    
+    }
+
+
+    #overlay{
+    position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      inset: 0;
+      z-index: -1;
+      background-color: rgb(250, 250, 250,0.7);
+    }
+
+
+    
+    img{
+            
+        height: 500px;
+           
+
+           
+    }
+
+    h1{ 
+
+        font-size: 40px;
+    
+    
+    }
+
+
+    p{
+        font-size: 24px;
+    }
+
+    video{
+        height: px;
+    }
+
+
+
+
+
+
+    /* #cursor{
+        background-image: url('./images/pixelCursor.webp');
+        cursor: no;
+    }
+
+     */
+
+
+    
+
+
+</style>
+</head>
+<body>
+    <div id="overlay"></div>
+
+    <nav><a  id="logo" href="index.html">Mystic Arts</a></nav>
+    
+    <h1>Art</h1>
+     <h2>Graphic Design</h2>
+        <swiper-container>
+            <swiper-slide><img src="./images/GraphicDesign/posterLowRes.jpg" alt=""> <p>Poster for hypothetical Haunted House </p></swiper-slide>
+            <swiper-slide><img src="./images/GraphicDesign/geturvaccine.jpg" alt=""><p>Pattern project "get ur vaccine bitch"</p></swiper-slide>
+            <swiper-slide><img src="./images/GraphicDesign/lowresEdit.jpg" alt=""><p>Photoshop Edit</p></swiper-slide>
+            <swiper-slide><img src="./images/GraphicDesign/CaribayShowcase.jpg" alt=""><p>Product Design Project Caribay</p></swiper-slide>
+            <swiper-slide><img src="./images/GraphicDesign/eaglevote.jpg" alt=""><p>Get The Vote Poster</p></swiper-slide>
+            <swiper-slide><video width="" height="520" controls>
+                <source src="images/GraphicDesign/michicatelierlogoreveal.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video><p>Michi Catelier Hypothetical Brand Logo Reveal</p></span></swiper-slide>
+    
+    
+          </swiper-container>
+    <h2>Paintings</h2>
+    <swiper-container>
+        <swiper-slide><img src="./images/Paintings/PaintingVenezuela.jpg" alt=""> <p>Painting Showcasing Venezuelan Brands </p></swiper-slide>
+    <swiper-slide><img src="./images/Paintings/AbstractPainting.jpg" alt=""><p>Untitled</p></swiper-slide>
+        <swiper-slide><img src="./images/Paintings/paintingLowres.jpg" alt=""><p>Cuteness and Sensibility 2: Man with a Pearl Earring</p></swiper-slide>
+       
+      </swiper-container>
+  
+
+</body>
+</html>
