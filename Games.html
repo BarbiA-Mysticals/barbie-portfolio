@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <title>Barbie's Portfolio</title>
+<link rel="stylesheet" href="./style.css" />
+<script src="./script.js" defer></script>
 <style>
     
     @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
@@ -90,27 +92,32 @@
     }
 
 
-
-
-
-
-    /* #cursor{
-        background-image: url('./images/pixelCursor.webp');
-        cursor: no;
-    }
-
-     */
-
-
     
 
 
 </style>
 </head>
 <body>
+
+    <audio id="blink" src="./sound/coinsound.mp3"></audio>
+    
     <div id="overlay"></div>
 
     <nav><a  id="logo" href="index.html">Mystic Arts</a></nav>
+    <div id="collectables">
+        <p><output>0</output> coins collected</p>
+  
+        <div class="coin" data-page="art"></div>
+        <div class="coin" data-page="about"></div>
+        <div class="coin" data-page="games"></div>
+    </div>
+
+    <div
+      class="coin to-be-collected"
+      data-page="games"
+      onclick="collect(this)"
+    ></div>
+     
     
     <h1>Games I developed :3</h1>
 

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbie's Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <style>
         
         @import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
@@ -26,13 +28,6 @@
 
            
 
-        }
-
-        img{
-            object-fit: cover;
-            width: 300px; 
-            height: 300px; 
-           
         }
 
         #logo{
@@ -59,17 +54,9 @@
         width: 20%;
         display: block;
         margin: auto;
+        padding: 20px;
         }
 
-        button{
-            size: 25px;
-            border:  none; 
-            align-items: center;
-            padding: 10px;
-            background-color: transparent;
-
-            
-        }
 
         .side-by-side {
         display: flex;
@@ -88,9 +75,29 @@
         font-size: 30px;
       }
 
-      #icon{
-        height: 100px;
+      .icons{
+        object-fit: cover;
+        width: 200px; 
+        height: 200x; 
+        
+        
       }
+
+      .icons:hover{
+
+        outline-color: palevioletred;
+        outline-style: dotted;
+
+
+      }
+
+      p{
+        font-size: 25px;
+      }
+
+
+
+      
 
       
 
@@ -110,17 +117,27 @@
     </style>
 </head>
 <body>
+
+  <audio id="blink" src="./sound/coinsound.mp3"></audio>
+    
     <div id="overlay"></div>
     <nav><a  id="logo" href="index.html">Mystic Arts</a></nav>
+    <div id="collectables">
+        <p><output>0</output> coins collected</p>
+  
+        <div class="coin" data-page="art"></div>
+        <div class="coin" data-page="about"></div>
+        <div class="coin" data-page="games"></div>
+      </div>
     <h1>
      Hi I'm Barbie, welcome to my humble portfolio!
     </h1>
     <img id="introimage" src="./images/sunset.png" alt="">
 
     <div class="side-by-side">
-    <span id="buttons"><a href="art.html"><button> <img src="./images/paintbrush.png" alt=""></button><p>Art</p></a></span>
-    <span id="buttons"><a href="aboutMe.html"><button> <img id="cat" src="./images/catHi.png" alt=""></button><p>About Me</p></a></span>
-    <span id="buttons"><a href="Games.html"><button> <img src="./images/X360.png" alt=""></button><p>Games</p></a></span>
+    <span ><a href="art.html"><img class="icons" src="./images/brush.png" alt=""></a><p>Art</p></span>
+    <span><a href="aboutMe.html"> <img class="icons" src="./images/catHi.png" alt=""></a><p>About Me</p></span>
+    <span><a href="Games.html"><img class="icons" src="./images/atari.png" alt=""></a><p>Games</p></span>
     </div>
     
     
