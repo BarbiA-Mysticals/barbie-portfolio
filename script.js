@@ -31,7 +31,18 @@ function updateCollectables() {
         // Add collected class to slot
         slot.classList.add("collected");
 
+        if (count == 3){
+          //Targeting image with the id introimg and changing the img when the required number of coins are collected
+    
+
+          document.getElementById("introimage").src = "./images/logo.PNG"
+        }
+
+
+
       }
+
+      
     }
   
     // Update count display
@@ -44,6 +55,7 @@ function updateCollectables() {
     //Targeting the audio with id blink
 
     Audio = document.querySelector("#blink")
+
 
     // Find page that clicked coin belongs to
     const page = coin.dataset.page;
